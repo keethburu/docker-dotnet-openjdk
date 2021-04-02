@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docx2hub:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dotnet-openjdk8:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
